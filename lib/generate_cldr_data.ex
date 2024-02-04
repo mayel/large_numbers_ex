@@ -5,7 +5,6 @@ defmodule M.GenerateCLDRData do
     "priv/big_numbers.csv"
     |> File.stream!()
     |> CSV.parse_stream()
-    # |> Stream.map(fn data ->
     |> Enum.reduce({nil, []}, fn data, {previous_entry, cldr} ->
       base = Integer.pow(10, String.to_integer(Enum.at(data, 0)))
 

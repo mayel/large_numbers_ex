@@ -25,7 +25,10 @@ defmodule M.MixProject do
         {:ex_cldr, path: "forks/ex_cldr", override: true},
         # {:ex_cldr, "~> 2.37"},
         {:ex_cldr_numbers, "~> 2.32"},
-        {:nimble_csv, "~> 1.1", only: [:dev]}
+        {:nimble_csv, "~> 1.1", only: [:dev]},
+        {:abacus, "~> 0.4.2"}
+        # {:evalex, "~> 0.1.0"},
+        # {:rustler, ">= 0.0.0", optional: true}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
